@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A-WO-08 ✅ - KoKo Anforderungsdokumentation</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/css/uikit.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.6/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.6/dist/js/uikit-icons.min.js"></script>
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+         let title = "chapter_1.66.md";
+         document.body.classList.add(title.replace('.md', '').replace('.', '-'));
+
+
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="uk-text-center">
+                    <img src="images/ownCloud-logo.svg" alt="ownCloud" class="logo">
+                </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Willkommen</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Übersicht</li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> Über ownCloud</a></li><li class="chapter-item expanded "><a href="chapter_3.html"><strong aria-hidden="true">3.</strong> Clients</a></li><li class="chapter-item expanded "><a href="chapter_4.html"><strong aria-hidden="true">4.</strong> Accounts</a></li><li class="chapter-item expanded "><a href="chapter_5.html"><strong aria-hidden="true">5.</strong> Erste Schritte</a></li><li class="chapter-item expanded "><a href="chapter_6.html"><strong aria-hidden="true">6.</strong> Monitoring</a></li><li class="chapter-item expanded "><a href="chapter_7.html"><strong aria-hidden="true">7.</strong> Service Desk</a></li><li class="chapter-item expanded "><a href="chapter_8.html"><strong aria-hidden="true">8.</strong> FAQ</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Verifizierende Teststellung</li><li class="chapter-item expanded "><a href="chapter_9.html"><strong aria-hidden="true">9.</strong> Anforderungen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_1.1.html"><strong aria-hidden="true">9.1.</strong> A-NF-02 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.2.html"><strong aria-hidden="true">9.2.</strong> A-CS-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.3.html"><strong aria-hidden="true">9.3.</strong> A-CS-02 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.4.html"><strong aria-hidden="true">9.4.</strong> EG-CS-05 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.5.html"><strong aria-hidden="true">9.5.</strong> EG-CS-11 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.6.html"><strong aria-hidden="true">9.6.</strong> EG-CS-12 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.7.html"><strong aria-hidden="true">9.7.</strong> EG-CS-14 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.8.html"><strong aria-hidden="true">9.8.</strong> A-CS-03 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.9.html"><strong aria-hidden="true">9.9.</strong> EG-CS-15 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.10.html"><strong aria-hidden="true">9.10.</strong> A-CS-04 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.11.html"><strong aria-hidden="true">9.11.</strong> EG-CS-16 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.12.html"><strong aria-hidden="true">9.12.</strong> A-CS-05 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.13.html"><strong aria-hidden="true">9.13.</strong> A-CS-06 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.14.html"><strong aria-hidden="true">9.14.</strong> EG-CS-21 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.15.html"><strong aria-hidden="true">9.15.</strong> EG-CS-22 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.16.html"><strong aria-hidden="true">9.16.</strong> A-CS-07 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.17.html"><strong aria-hidden="true">9.17.</strong> EG-CS-33 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.18.html"><strong aria-hidden="true">9.18.</strong> EG-CS-34 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.19.html"><strong aria-hidden="true">9.19.</strong> EG-CS-35 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.20.html"><strong aria-hidden="true">9.20.</strong> EG-CS-36 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.21.html"><strong aria-hidden="true">9.21.</strong> EG-CS-37 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.22.html"><strong aria-hidden="true">9.22.</strong> EG-CS-38 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.23.html"><strong aria-hidden="true">9.23.</strong> EG-CS-39 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.24.html"><strong aria-hidden="true">9.24.</strong> EG-CS-40 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.25.html"><strong aria-hidden="true">9.25.</strong> EG-CS-41 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.26.html"><strong aria-hidden="true">9.26.</strong> EG-CS-46 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.27.html"><strong aria-hidden="true">9.27.</strong> A-CS-08 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.28.html"><strong aria-hidden="true">9.28.</strong> EG-CS-47 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.29.html"><strong aria-hidden="true">9.29.</strong> EG-CS-50 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.30.html"><strong aria-hidden="true">9.30.</strong> EG-CS-51 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.31.html"><strong aria-hidden="true">9.31.</strong> A-NF-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.32.html"><strong aria-hidden="true">9.32.</strong> A-NF-04 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.33.html"><strong aria-hidden="true">9.33.</strong> A-NF-03 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.34.html"><strong aria-hidden="true">9.34.</strong> A-F-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.35.html"><strong aria-hidden="true">9.35.</strong> A-WO-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.36.html"><strong aria-hidden="true">9.36.</strong> EG-WO-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.37.html"><strong aria-hidden="true">9.37.</strong> A-WO-02 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.38.html"><strong aria-hidden="true">9.38.</strong> EG-WO-07 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.39.html"><strong aria-hidden="true">9.39.</strong> A-WO-03 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.40.html"><strong aria-hidden="true">9.40.</strong> A-WO-04 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.41.html"><strong aria-hidden="true">9.41.</strong> EG-WO-08 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.42.html"><strong aria-hidden="true">9.42.</strong> EG-WO-10 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.43.html"><strong aria-hidden="true">9.43.</strong> EG-WO-11 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.44.html"><strong aria-hidden="true">9.44.</strong> A-WO-05 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.45.html"><strong aria-hidden="true">9.45.</strong> EG-WO-12 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.46.html"><strong aria-hidden="true">9.46.</strong> EG-WO-13 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.47.html"><strong aria-hidden="true">9.47.</strong> EG-WO-14 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.48.html"><strong aria-hidden="true">9.48.</strong> A-WO-06 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.49.html"><strong aria-hidden="true">9.49.</strong> EG-WO-19 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.50.html"><strong aria-hidden="true">9.50.</strong> EG-WO-20 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.51.html"><strong aria-hidden="true">9.51.</strong> EG-WO-21 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.52.html"><strong aria-hidden="true">9.52.</strong> EG-WO-22 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.53.html"><strong aria-hidden="true">9.53.</strong> EG-WO-23 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.54.html"><strong aria-hidden="true">9.54.</strong> EG-WO-25 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.55.html"><strong aria-hidden="true">9.55.</strong> EG-WO-31 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.56.html"><strong aria-hidden="true">9.56.</strong> EG-WO-36 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.57.html"><strong aria-hidden="true">9.57.</strong> EG-WO-37 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.58.html"><strong aria-hidden="true">9.58.</strong> EG-WO-39 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.59.html"><strong aria-hidden="true">9.59.</strong> EG-WO-40 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.60.html"><strong aria-hidden="true">9.60.</strong> EG-WO-41 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.61.html"><strong aria-hidden="true">9.61.</strong> A-WO-07 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.62.html"><strong aria-hidden="true">9.62.</strong> EG-WO-46 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.63.html"><strong aria-hidden="true">9.63.</strong> EG-WO-47 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.64.html"><strong aria-hidden="true">9.64.</strong> EG-WO-49 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.65.html"><strong aria-hidden="true">9.65.</strong> EG-WO-52 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.66.html" class="active"><strong aria-hidden="true">9.66.</strong> A-WO-08 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.67.html"><strong aria-hidden="true">9.67.</strong> EG-WO-55 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.68.html"><strong aria-hidden="true">9.68.</strong> EG-WO-56 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.69.html"><strong aria-hidden="true">9.69.</strong> EG-WO-58 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.70.html"><strong aria-hidden="true">9.70.</strong> EG-WO-62 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.71.html"><strong aria-hidden="true">9.71.</strong> EG-WO-63 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.72.html"><strong aria-hidden="true">9.72.</strong> A-WO-09 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.73.html"><strong aria-hidden="true">9.73.</strong> A-WO-10 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.74.html"><strong aria-hidden="true">9.74.</strong> EG-WO-67 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.75.html"><strong aria-hidden="true">9.75.</strong> EG-WO-68 ✅</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button uk-hidden" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">KoKo Anforderungsdokumentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content uk-padding-large">
+                    <main>
+                        <table class="uk-table uk-table-divider uk-table-justify">
+  <thead>
+    <tr>
+      <th class="uk-text-center">A/B</th>
+      <th class="uk-text-center">Lfd. Nr.</th>
+      <th class="uk-text-center">Nr. aus LB</th>
+      <th class="uk-text-center">Dringlichkeit</th>
+      <th class="uk-text-center">Priorität</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>A-WO-08</td>
+      <td>WO-5.2.12</td>
+      <td>Muss</td>
+      <td>n/a</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="anforderung"><a class="header" href="#anforderung">Anforderung</a></h1>
+<p>Ermöglichen Sie im WebOffice-Tabellenkalkulationsmodul das Erstellen und das Bearbeiten von Diagrammen (mindestens Säulen-, Balken-, Kreis-, Linien-,
+Punktdiagramm)?</p>
+<h2 id="antwort"><a class="header" href="#antwort">Antwort</a></h2>
+<div class="wrapper">
+  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+  <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+  <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+</svg>
+</div>  
+<h1 id="erstellen-eines-diagramms-von-anfang-bis-ende"><a class="header" href="#erstellen-eines-diagramms-von-anfang-bis-ende">Erstellen eines Diagramms von Anfang bis Ende</a></h1>
+<h2 id="einleitung"><a class="header" href="#einleitung">Einleitung</a></h2>
+<p>Diagramme oder Grafiken werden häufig verwendet, um numerische Datensätze in visueller Form darzustellen. Diagramme sind unverzichtbar, wenn Sie Ihrem Publikum Informationen klar und verständlich präsentieren möchten.</p>
+<ul>
+<li>Diagramme verschiedener Typen erstellen, wie z.B. Spalten-, Linien-, Kreis-, Balken-, Flächen-, Punkt- und Kursdiagramme;</li>
+<li>Das Erscheinungsbild Ihres Diagramms ändern, indem Sie aus einer Vielzahl vordefinierter Stile auswählen;</li>
+<li>Das Diagrammlayout konfigurieren, Achsenoptionen festlegen, Textbeschriftungen, Gitternetzlinien usw. zeigen oder verbergen;</li>
+<li>Die Darstellung einzelner Diagrammelemente anpassen.</li>
+</ul>
+<p>All dies ermöglicht es Ihnen, Ihre Daten optimal anzuzeigen. Befolgen Sie die folgenden Anweisungen, um ein Diagramm im Tabellenkalkulationseditor einfach und schnell zu erstellen.</p>
+<h2 id="schritt-1-die-erforderlichen-daten-und-den-diagrammtyp-auswählen"><a class="header" href="#schritt-1-die-erforderlichen-daten-und-den-diagrammtyp-auswählen">Schritt 1. Die erforderlichen Daten und den Diagrammtyp auswählen</a></h2>
+<p>Um ein Diagramm zu erstellen, ist es wichtig, dass Sie Ihre Daten in einem Arbeitsblatt ordnungsgemäß organisieren. Alle Datenreihen (d.h. Daten in separaten Spalten/Zeilen) sollten Überschriften haben, die als Legendeneinträge in Ihrem Diagramm verwendet werden.</p>
+<p>Wenn Sie alle erforderlichen Daten eingegeben haben, können Sie mit der Erstellung Ihres Diagramms beginnen:</p>
+<ol>
+<li>
+<p>Wählen Sie die Datenreihen aus, die zum Zeichnen des Diagramms verwendet werden sollen (Sie können den ausgewählten Datenbereich später ändern). In den meisten Fällen muss die Auswahl Spalten-/Zeilenüberschriften enthalten.</p>
+</li>
+<li>
+<p>Wechseln Sie zur Registerkarte <strong>Einfügen</strong> und klicken Sie auf das Symbol <strong>Diagramm</strong> in der oberen Symbolleiste: Ein Menü mit verfügbaren Diagrammtypen wird geöffnet.</p>
+</li>
+<li>
+<p>Entscheiden Sie, welcher Diagrammtyp am besten zu Ihren Daten passt, und klicken Sie im Menü auf den gewünschten Typ.</p>
+<p><img src="./images/diagram-step1.png#uk-margin-auto" alt="Diagramm erstellen Schritt  1" /></p>
+<p>Sie können mit jedem Diagrammtyp beginnen und ihn später über das Menü <strong>Typ</strong> in der rechten Seitenleiste ändern.</p>
+<p>Hier ist eine kurze Übersicht der verfügbaren Diagrammtypen:</p>
+<ul>
+<li><strong>Spalten</strong>diagramme werden verwendet, um Daten in mehreren Datenreihen zu vergleichen.</li>
+<li><strong>Linien</strong>diagramme werden verwendet, um Trends oder Änderungen von Werten im Laufe der Zeit anzuzeigen.</li>
+<li><strong>Kreis</strong>diagramme werden verwendet, um Ganz-Teil-Beziehungen für eine Datenreihe zu demonstrieren.</li>
+<li><strong>Balken</strong>diagramme sind den Spaltendiagrammen ähnlich aber Balkendiagramme verwenden horizontale Balken anstelle der vertikalen Spalten, um Daten visuell anzuzeigen.</li>
+<li><strong>Flächen</strong>diagramme funktionieren wie Liniendiagrammen aus, aber Bereiche unter Linien sind mit Volltonfarben gefüllt.</li>
+<li><strong>Punkt</strong>diagramme werden zum Vergleich numerischer Werte in zwei Reihen verwendet.</li>
+<li><strong>Kurs</strong>diagramme werden verwendet, um die Aktienkurse (Eröffnung, Hoch, Tief, Schließen) über einen bestimmten Zeitraum anzuzeigen.</li>
+</ul>
+</li>
+</ol>
+<p>Sobald Sie einen Diagrammtyp ausgewählt haben, wird das Diagramm in der Mitte des aktuellen Arbeitsblatts hinzugefügt.</p>
+<p><img src="./images/diagram-step1-1.png#uk-margin-auto" alt="Diagramm erstellen Schritt  1" /></p>
+<h2 id="schritt-2-den-diagrammstil-und-die-verwendeten-daten-ändern"><a class="header" href="#schritt-2-den-diagrammstil-und-die-verwendeten-daten-ändern">Schritt 2. Den Diagrammstil und die verwendeten Daten ändern</a></h2>
+<p>Um die Darstellung des Diagramms schnell zu ändern, verwenden Sie das Menü <strong>Stil</strong> in der rechten Seitenleiste und wählen Sie die erforderliche Voreinstellung aus der Liste vordefinierter Stile aus. Beachten Sie, dass es einige andere Optionen gibt, mit denen Sie die Darstellung des Diagramms ändern können:</p>
+<ul>
+<li>Sie können Ihre benutzerdefinierte Füllung sowohl auf den Diagrammhintergrund als auch auf jedes Diagrammelement anwenden, z. B. <em>Zeichnungsfläche</em>, <em>Datenreihe</em>, <em>Diagrammtitel</em>, <em>Legende</em> usw. Wählen Sie das Diagramm oder sein Element im Arbeitsblatt aus und klicken Sie auf das Symbol <strong>Form-Einstellungen</strong> in der rechten Seitenleiste und wählen Sie den gewünschten Typ der <strong>Füllung</strong> aus (z.B. können Sie eine Füllung mit Farbverlauf oder eine der verfügbaren Texturen verwenden). Wenn Sie eine vertikale oder horizontale Achse oder Gitterlinien auswählen, sind die Stricheinstellungen nur auf der Registerkarte <strong>Form-Einstellungen</strong> verfügbar: <em>Farbe</em>, <em>Größe</em> und <em>Typ</em>.</li>
+<li>Die Farbe aller Diagrammelemente kann geändert werden, wenn Sie mithilfe des Symbols <strong>Farbschema änder</strong> auf der Registerkarte <strong>Startseite</strong> in der oberen Symbolleiste ein neues <strong>Farbschema</strong> auswählen.</li>
+</ul>
+<p>Wenn Sie den Datenbereich ändern müssen, der in der Zeichnungsfläche des Diagramms verwendet wird (z. B. wenn Sie der Tabelle neue Datenreihen hinzugefügt haben und diese nun in Ihr Diagramm aufnehmen möchten), klicken Sie in der rechten Seitenleiste auf die Schaltfläche <strong>Daten auswählen</strong>. Ein neues Fenster wird geöffnet. Sie können Folgendes tun:</p>
+<ul>
+<li>Geben Sie im Eingabefeld den erforderlichen Zellbereich im folgenden Format ein: <em>Sheet1!A1:B2</em>. Klicken Sie auf <strong>OK</strong>, um die Änderungen zu übernehmen.</li>
+</ul>
+<p><img src="./images/diagram-step2.png#uk-margin-auto" alt="Diagramm erstellen Schritt  2" /></p>
+<ul>
+<li>Oder wählen Sie mit der Maus einen neuen Datenbereich im Arbeitsblatt aus. Wenn Sie bereit sind, klicken Sie auf <strong>OK</strong>.</li>
+<li>Anstatt die Option <strong>Daten auswählen</strong> zu verwenden, können Sie auch auf das Diagramm selbst klicken. Die aktuelle Auswahl wird im Arbeitsblatt hervorgehoben. Ziehen Sie die Ziehpunkte um die Quelldaten, um den Bereich zu ändern.</li>
+</ul>
+<p>Klicken Sie zweimal auf das Diagramm im Arbeitsblatt oder auf den Link <strong>Erweiterte Einstellungen anzeigen</strong> in der rechten Seitenleiste, um die Datenanordnung im Diagramm zu ändern, d.h. die Art und Weise, wie Ihre Datenreihen entlang der horizontalen Achse (nach Spalten oder Zeilen) dargestellt werden. Das Fenster <strong>Diagramm - Erweiterte Einstellungen</strong> wird geöffnet.</p>
+<p><img src="./images/diagram-step2-1.png#uk-margin-auto" alt="Diagramm erstellen Schritt  2" /></p>
+<p>Wählen Sie die <strong>Datenreihe</strong> aus, die auf der horizontalen Achse in Zeilen oder in Spalten verwendet werden soll, und klicken Sie auf <strong>OK</strong>. Ihre Diagrammdaten werden jetzt neu angeordnet und die zuvor in der Legende verwendeten Reihennamen werden jetzt als Kategorien entlang der horizontalen Achse angezeigt.</p>
+<p><img src="./images/diagram-step2-2.png#uk-margin-auto" alt="Diagramm erstellen Schritt  2" /></p>
+<h2 id="schritt-3-textelemente-hinzufügen-oder-ändern"><a class="header" href="#schritt-3-textelemente-hinzufügen-oder-ändern">Schritt 3. Textelemente hinzufügen oder ändern</a></h2>
+<p>Verwenden Sie Textbeschriftungen wie <em>Diagrammtitel</em>, <em>Achsentitel</em>, <em>Legendeneinträge</em> und <em>Datenbeschriftungen</em>, um Ihr Diagramm informativer und verständlicher zu machen.</p>
+<p>Das erstellte Diagramm enthält bereits den Standardtitel, der sich über der Zeichnungsfläche befindet. Um den Diagrammtitel zu bearbeiten, wählen Sie den Standardtext mit der Maus aus und geben Sie stattdessen Ihren eigenen Titel ein. Sie können die Titelposition mithilfe der Liste <strong>Diagrammtitel</strong> auf der Registerkarte <strong>Layout</strong> des Fensters <strong>Diagramm - Erweiterte Einstellungen</strong> ändern. Wenn Sie den Diagrammtitel nicht anzeigen möchten, wählen Sie die Option <strong>Kein</strong> aus dieser Liste.</p>
+<p><img src="./images/diagram-step3.png#uk-margin-auto" alt="Diagramm erstellen Schritt  3" /></p>
+<p>Standardmäßig enthält Ihr Diagramm auch die Legende rechts neben der Zeichnungsfläche. Sie können die Legendenposition ändern, indem Sie die erforderliche Option aus der entsprechenden Liste auf der Registerkarte <strong>Layout</strong> des Fensters <strong>Diagramm - Erweiterte Einstellungen</strong> auswählen. Z.B. können Sie die Legende über oder unter der Zeichnungsfläche positionieren oder sie mit der Option <strong>Kein</strong> ausblenden.</p>
+<p><img src="./images/diagram-step3-1.png#uk-margin-auto" alt="Diagramm erstellen Schritt  3" /></p>
+<p>Es ist auch möglich, Datenbeschriftungen hinzuzufügen, d.h. Textbeschriftungen, die exakte Werte von Datenpunkten darstellen. Öffnen Sie die Registerkarte <strong>Layout</strong> des Fensters <strong>Diagramm - Erweiterte Einstellungen</strong>.</p>
+<ol>
+<li>Legen Sie die Position der Datenbeschriftungen relativ zu den Datenpunkten fest und wählen Sie die gewünschte Option aus der Liste aus.</li>
+<li>Wählen Sie die Daten aus, die Sie in Ihre Beschriftungen aufnehmen möchten, und aktivieren Sie die entsprechenden Kontrollkästchen: <strong>Reihenname</strong>, <strong>Kategoriename</strong>, <strong>Wert</strong>.</li>
+</ol>
+<p><img src="./images/diagram-step3-2.png#uk-margin-auto" alt="Diagramm erstellen Schritt  3" /></p>
+<ol>
+<li>Geben Sie ein Zeichen (Komma, Semikolon usw.), das Sie zum Trennen mehrerer Beschriftungen verwenden möchten, in das Eingabefeld <strong>Trennzeichen für Datenbeschriftungen</strong> ein.</li>
+</ol>
+<p>Klicken Sie auf <strong>OK</strong>, um die Änderungen anzunehmen.</p>
+<p><img src="./images/diagram-step3-3.png#uk-margin-auto" alt="Diagramm erstellen Schritt  3" /></p>
+<p>Achsentitel werden standardmäßig nicht angezeigt. Wenn Sie den Titel der horizontalen Achse** anzeigen möchten, wählen Sie die Option <strong>Ohne Überlagerung</strong> aus der Drop-Down-Liste auf der Registerkarte <strong>Layout</strong> des Fensters <strong>Diagramm - Erweiterte Einstellungen</strong>. In diesem Fall wird der Titel unterhalb der horizontalen Achse angezeigt.</p>
+<p>Für den Titel der vertikalen Achse können Sie die Ausrichtung festlegen, indem Sie aus den folgenden verfügbaren Optionen auswählen:</p>
+<ul>
+<li><strong>Gedreht</strong>, um den Titel von unten nach oben links von der vertikalen Achse anzuzeigen.</li>
+<li><strong>Horizontal</strong>, um den Titel horizontal links von der vertikalen Achse anzuzeigen.</li>
+</ul>
+<p><img src="./images/diagram-step3-4.png#uk-margin-auto" alt="Diagramm erstellen Schritt  3" /></p>
+<p>Wenn Sie einen Achsentitel hinzugefügt haben, wählen Sie den Standardtiteltext im Diagramm aus und geben Sie Ihren eigenen Text ein, um anzugeben, welche Werte oder Kategorien auf dieser Achse dargestellt werden.</p>
+<p>Für Kreisdiagramme sind keine Achsen-Titeloptionen verfügbar.</p>
+<p><img src="./images/diagram-step3-3.png#uk-margin-auto" alt="Diagramm erstellen Schritt  3" /></p>
+<p>Sie können die Schriftformatierung in allen hinzugefügten Textelementen ändern. Wählen Sie das gewünschte Textelement aus, indem Sie mit der linken Maustaste darauf klicken. Verwenden Sie dann Symbole auf der Registerkarte <strong>Startseite</strong> in der oberen Symbolleiste, um Schriftart, Stil, Größe oder Farbe zu ändern.</p>
+<h2 id="schritt-4-die-achsenoptionen-ändern-und-andere-diagrammelemente-formatieren"><a class="header" href="#schritt-4-die-achsenoptionen-ändern-und-andere-diagrammelemente-formatieren">Schritt 4. Die Achsenoptionen ändern und andere Diagrammelemente formatieren</a></h2>
+<p>Um die Diagramminformationen besser anzuzeigen, können Sie Diagrammachsen und Gitterlinien ausblenden oder anzeigen, Eigenschaften der Teilstriche anpassen usw.</p>
+<p>Bei Diagrammen jedes Types, mit Ausnahme von Kreisdiagrammen, können Sie sowohl horizontale als auch vertikale Achsen mit all ihren Teilstrichen und Beschriftungen ausblenden, wenn Sie sie nicht anzeigen möchten. Dies kann mit der Option <strong>Verbergen</strong> auf der Registerkarte <strong>Layout</strong> gemacht werden. Verwenden Sie die Option <strong>Anzeigen</strong>, um die Achsen erneut anzuzeigen.</p>
+<p>Vertikale und horizontale Gitterlinien verlaufen über die Zechnungsfläche, um die Datenwerte einfach abschätzen zu können. Sie können festlegen, welche Art von Gitterlinien Sie anzeigen möchten: <strong>primär</strong>, <strong>sekundär</strong> oder <strong>primär und sekundär</strong>. Verwenden Sie die Option <strong>Kein</strong>, um Gitterlinien überhaupt auszublenden. Diese Einstellungen sind auf der Registerkarte <strong>Layout</strong> verfügbar.</p>
+<p><img src="./images/diagram-step4.png#uk-margin-auto" alt="Diagramm erstellen Schritt  4" /></p>
+<p>Wenn die Diagrammachsen angezeigt werden, können Sie zusätzlich einige Achsenoptionen anpassen. Um auf diese Einstellungen zuzugreifen, wechseln Sie zur Registerkarte <strong>Vertikale/Horizontale Achse</strong> des Fensters <strong>Diagramm - Erweiterte Einstellungen</strong>. Sie können beispielsweise die folgenden Parameter ändern:</p>
+<ul>
+<li>Stellen Sie den genauen auf der vertikalen Achse angezeigten Minimal-/Maximalwert anstelle des standardmäßig ausgewählten automatischen Werts ein.</li>
+<li>Legen Sie den Punkt fest, an dem sich Achsen schneiden sollen, indem Sie einen bestimmten Wert angeben oder den Minimal-/Maximalwert als Schnittpunkt verwenden.</li>
+<li>Stellen Sie die Position der Primär- und Sekundärteilstriche relativ zur vertikalen/horizontalen Achse ein und geben Sie ein Intervall zwischen diesen Teilstrichen auf der horizontalen Achse an.</li>
+<li>Legen Sie die Position von Beschriftungen fest, die numerische Werte auf der vertikalen Achse und/oder Kategorien auf der horizontalen Achse anzeigen.</li>
+</ul>
+<h2 id="schritt-5-größe-und-position-des-diagramms-ändern"><a class="header" href="#schritt-5-größe-und-position-des-diagramms-ändern">Schritt 5. Größe und Position des Diagramms ändern</a></h2>
+<p>Jetzt ist Ihr Diagramm fertig, aber Sie müssen möglicherweise auch seine Größe anpassen oder das Diagramm an eine geeignetere Position im Arbeitsblatt verschieben.</p>
+<p><strong>Um die Diagrammgröße zu ändern</strong>, können Sie Ziehpunkte an den Diagrammkanten ziehen. Halten Sie die <strong>Umschalttaste</strong> gedrückt und ziehen Sie einen der Eckziehpunkte, um die ursprünglichen Proportionen des Diagramms während der Größenänderung beizubehalten.</p>
+<p>Sie können auch den Abschnitt <strong>Größe</strong> in der rechten Seitenleiste verwenden, um genaue Werte für Breite und Höhe festzulegen.</p>
+<p><img src="./images/diagram-step5.png#uk-margin-auto" alt="Diagramm erstellen Schritt  5" /></p>
+<p>Um die Diagrammposition zu ändern, bewegen Sie den Mauszeiger über das Diagramm, bis es sich in einen vierköpfigen Pfeil verwandelt, und ziehen Sie das Diagramm an die gewünschte Position im Arbeitsblatt.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_1.65.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter_1.67.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_1.65.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter_1.67.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

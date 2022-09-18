@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>EG-WO-49 ✅ - KoKo Anforderungsdokumentation</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/css/uikit.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.6/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.6/dist/js/uikit-icons.min.js"></script>
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+         let title = "chapter_1.64.md";
+         document.body.classList.add(title.replace('.md', '').replace('.', '-'));
+
+
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <div class="uk-text-center">
+                    <img src="images/ownCloud-logo.svg" alt="ownCloud" class="logo">
+                </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Willkommen</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Übersicht</li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> Über ownCloud</a></li><li class="chapter-item expanded "><a href="chapter_3.html"><strong aria-hidden="true">3.</strong> Clients</a></li><li class="chapter-item expanded "><a href="chapter_4.html"><strong aria-hidden="true">4.</strong> Accounts</a></li><li class="chapter-item expanded "><a href="chapter_5.html"><strong aria-hidden="true">5.</strong> Erste Schritte</a></li><li class="chapter-item expanded "><a href="chapter_6.html"><strong aria-hidden="true">6.</strong> Monitoring</a></li><li class="chapter-item expanded "><a href="chapter_7.html"><strong aria-hidden="true">7.</strong> Service Desk</a></li><li class="chapter-item expanded "><a href="chapter_8.html"><strong aria-hidden="true">8.</strong> FAQ</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Verifizierende Teststellung</li><li class="chapter-item expanded "><a href="chapter_9.html"><strong aria-hidden="true">9.</strong> Anforderungen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_1.1.html"><strong aria-hidden="true">9.1.</strong> A-NF-02 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.2.html"><strong aria-hidden="true">9.2.</strong> A-CS-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.3.html"><strong aria-hidden="true">9.3.</strong> A-CS-02 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.4.html"><strong aria-hidden="true">9.4.</strong> EG-CS-05 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.5.html"><strong aria-hidden="true">9.5.</strong> EG-CS-11 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.6.html"><strong aria-hidden="true">9.6.</strong> EG-CS-12 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.7.html"><strong aria-hidden="true">9.7.</strong> EG-CS-14 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.8.html"><strong aria-hidden="true">9.8.</strong> A-CS-03 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.9.html"><strong aria-hidden="true">9.9.</strong> EG-CS-15 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.10.html"><strong aria-hidden="true">9.10.</strong> A-CS-04 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.11.html"><strong aria-hidden="true">9.11.</strong> EG-CS-16 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.12.html"><strong aria-hidden="true">9.12.</strong> A-CS-05 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.13.html"><strong aria-hidden="true">9.13.</strong> A-CS-06 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.14.html"><strong aria-hidden="true">9.14.</strong> EG-CS-21 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.15.html"><strong aria-hidden="true">9.15.</strong> EG-CS-22 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.16.html"><strong aria-hidden="true">9.16.</strong> A-CS-07 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.17.html"><strong aria-hidden="true">9.17.</strong> EG-CS-33 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.18.html"><strong aria-hidden="true">9.18.</strong> EG-CS-34 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.19.html"><strong aria-hidden="true">9.19.</strong> EG-CS-35 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.20.html"><strong aria-hidden="true">9.20.</strong> EG-CS-36 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.21.html"><strong aria-hidden="true">9.21.</strong> EG-CS-37 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.22.html"><strong aria-hidden="true">9.22.</strong> EG-CS-38 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.23.html"><strong aria-hidden="true">9.23.</strong> EG-CS-39 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.24.html"><strong aria-hidden="true">9.24.</strong> EG-CS-40 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.25.html"><strong aria-hidden="true">9.25.</strong> EG-CS-41 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.26.html"><strong aria-hidden="true">9.26.</strong> EG-CS-46 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.27.html"><strong aria-hidden="true">9.27.</strong> A-CS-08 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.28.html"><strong aria-hidden="true">9.28.</strong> EG-CS-47 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.29.html"><strong aria-hidden="true">9.29.</strong> EG-CS-50 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.30.html"><strong aria-hidden="true">9.30.</strong> EG-CS-51 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.31.html"><strong aria-hidden="true">9.31.</strong> A-NF-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.32.html"><strong aria-hidden="true">9.32.</strong> A-NF-04 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.33.html"><strong aria-hidden="true">9.33.</strong> A-NF-03 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.34.html"><strong aria-hidden="true">9.34.</strong> A-F-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.35.html"><strong aria-hidden="true">9.35.</strong> A-WO-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.36.html"><strong aria-hidden="true">9.36.</strong> EG-WO-01 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.37.html"><strong aria-hidden="true">9.37.</strong> A-WO-02 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.38.html"><strong aria-hidden="true">9.38.</strong> EG-WO-07 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.39.html"><strong aria-hidden="true">9.39.</strong> A-WO-03 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.40.html"><strong aria-hidden="true">9.40.</strong> A-WO-04 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.41.html"><strong aria-hidden="true">9.41.</strong> EG-WO-08 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.42.html"><strong aria-hidden="true">9.42.</strong> EG-WO-10 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.43.html"><strong aria-hidden="true">9.43.</strong> EG-WO-11 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.44.html"><strong aria-hidden="true">9.44.</strong> A-WO-05 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.45.html"><strong aria-hidden="true">9.45.</strong> EG-WO-12 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.46.html"><strong aria-hidden="true">9.46.</strong> EG-WO-13 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.47.html"><strong aria-hidden="true">9.47.</strong> EG-WO-14 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.48.html"><strong aria-hidden="true">9.48.</strong> A-WO-06 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.49.html"><strong aria-hidden="true">9.49.</strong> EG-WO-19 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.50.html"><strong aria-hidden="true">9.50.</strong> EG-WO-20 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.51.html"><strong aria-hidden="true">9.51.</strong> EG-WO-21 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.52.html"><strong aria-hidden="true">9.52.</strong> EG-WO-22 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.53.html"><strong aria-hidden="true">9.53.</strong> EG-WO-23 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.54.html"><strong aria-hidden="true">9.54.</strong> EG-WO-25 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.55.html"><strong aria-hidden="true">9.55.</strong> EG-WO-31 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.56.html"><strong aria-hidden="true">9.56.</strong> EG-WO-36 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.57.html"><strong aria-hidden="true">9.57.</strong> EG-WO-37 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.58.html"><strong aria-hidden="true">9.58.</strong> EG-WO-39 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.59.html"><strong aria-hidden="true">9.59.</strong> EG-WO-40 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.60.html"><strong aria-hidden="true">9.60.</strong> EG-WO-41 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.61.html"><strong aria-hidden="true">9.61.</strong> A-WO-07 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.62.html"><strong aria-hidden="true">9.62.</strong> EG-WO-46 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.63.html"><strong aria-hidden="true">9.63.</strong> EG-WO-47 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.64.html" class="active"><strong aria-hidden="true">9.64.</strong> EG-WO-49 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.65.html"><strong aria-hidden="true">9.65.</strong> EG-WO-52 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.66.html"><strong aria-hidden="true">9.66.</strong> A-WO-08 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.67.html"><strong aria-hidden="true">9.67.</strong> EG-WO-55 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.68.html"><strong aria-hidden="true">9.68.</strong> EG-WO-56 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.69.html"><strong aria-hidden="true">9.69.</strong> EG-WO-58 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.70.html"><strong aria-hidden="true">9.70.</strong> EG-WO-62 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.71.html"><strong aria-hidden="true">9.71.</strong> EG-WO-63 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.72.html"><strong aria-hidden="true">9.72.</strong> A-WO-09 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.73.html"><strong aria-hidden="true">9.73.</strong> A-WO-10 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.74.html"><strong aria-hidden="true">9.74.</strong> EG-WO-67 ✅</a></li><li class="chapter-item expanded "><a href="chapter_1.75.html"><strong aria-hidden="true">9.75.</strong> EG-WO-68 ✅</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button uk-hidden" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">KoKo Anforderungsdokumentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content uk-padding-large">
+                    <main>
+                        <table class="uk-table uk-table-divider uk-table-justify">
+  <thead>
+    <tr>
+      <th class="uk-text-center">A/B</th>
+      <th class="uk-text-center">Lfd. Nr.</th>
+      <th class="uk-text-center">Nr. aus LB</th>
+      <th class="uk-text-center">Dringlichkeit</th>
+      <th class="uk-text-center">Priorität</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B</td>
+      <td>EG-WO-49</td>
+      <td>WO-5.2.06</td>
+      <td>Soll </td>
+      <td>I</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="anforderung"><a class="header" href="#anforderung">Anforderung</a></h1>
+<p>Ermöglichen  Sie  dem  Nutzer  im  WebOffice- Tabellenkalkulationsmodul  die  Verwendung  von statistischen      Funktionen      (insbesondere Regressionsfunktionen,             Mittelwerte, Standardabweichung, Modalwert)?</p>
+<h2 id="antwort"><a class="header" href="#antwort">Antwort</a></h2>
+<div class="wrapper">
+  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+  <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+  <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+</svg>
+</div>  
+<p>Die Möglichkeit grundlegende Berechnungen durchzuführen ist der eigentliche Hauptgrund für die Verwendung einer Tabellenkalkulation. Wenn Sie einen Zellbereich in Ihrer Tabelle auswählen, werden einige Berechnungen bereits automatisch ausgeführt:</p>
+<ul>
+<li><strong>MITTELWERT</strong> analysiert den ausgewählte Zellbereich und ermittelt den Durchschnittswert.</li>
+<li><strong>ANZAHL</strong> gibt die Anzahl der ausgewählten Zellen wieder, wobei leere Zellen ignoriert werden.</li>
+<li><strong>MIN</strong> gibt den kleinsten Wert in einer Liste mit Argumenten zurück.</li>
+<li><strong>MAX</strong> gibt den größten Wert in einer Liste mit Argumenten zurück.</li>
+<li><strong>SUMME</strong> gibt die SUMME der markierten Zellen wieder, wobei leere Zellen oder Zellen mit Text ignoriert werden.</li>
+</ul>
+<p>Die Ergebnisse dieser automatisch durchgeführten Berechnungen werden in der unteren rechten Ecke der Statusleiste angezeigt.</p>
+<p><img src="./images/basiccalculations.png" alt="Grundfunktionen" /></p>
+<p>Um andere Berechnungen durchzuführen, können Sie die gewünschte Formel mit den üblichen mathematischen Operatoren manuell einfügen oder eine vordefinierte Formel verwenden.</p>
+<p>Die Möglichkeiten zum Arbeiten mit <strong>Funktionen</strong> sind sowohl über die Registerkarten <strong>Startseite</strong> als auch <strong>Formel</strong> oder durch Drücken der Tastenkombination <em>Umschalt+F3</em> verfügbar. Auf der Registerkarte <strong>Startseite</strong> können Sie die Schaltfläche <strong>Funktion einfügen</strong> verwenden. Fügen Sie eine der am häufigsten verwendeten Funktionen hinzu (SUMME, MITTELWERT, MIN, MAX, ANZAHL) oder öffnen Sie das Fenster <strong>Funktion einfügen</strong>, das alle verfügbaren Funktionen nach Kategorien sortiert enthält. Verwenden Sie das Suchfeld, um die genaue Funktion anhand ihres Namens zu finden.</p>
+<p><img src="./images/insertfunctionwindow.png#uk-margin-auto" alt="Insert Function" /></p>
+<p>Auf der Registerkarte <strong>Formel</strong> können Sie die folgenden Schaltflächen verwenden:</p>
+<p><img src="./images/formulatab.png" alt="Formula tab" /></p>
+<ul>
+<li><strong>Formel</strong>, um das Fenster <strong>Funktion einfügen</strong> zu öffnen, das alle verfügbaren Funktionen nach Kategorien sortiert enthält.</li>
+<li><strong>AutoSumme</strong>, um schnell auf die Funktionen SUMME, MIN, MAX, ANZAHL zuzugreifen. Wenn Sie eine Funktion aus dieser Gruppe auswählen, werden automatisch Berechnungen für alle Zellen in der Spalte über der ausgewählten Zelle durchgeführt, sodass Sie keine Argumente eingeben müssen.</li>
+<li><strong>Zuletzt verwendet</strong>, um schnell auf 10 zuletzt verwendete Funktionen zuzugreifen.</li>
+<li><strong>Finanzmathematik</strong>, <strong>Logisch</strong>, <strong>Text und Daten</strong>, <strong>Datum und Uhrzeit</strong>, <strong>Suchen und Bezüge</strong>, <strong>Mathematik und Trigonometrie</strong>, um schnell auf Funktionen zuzugreifen, die zu den entsprechenden Kategorien gehören.</li>
+<li><strong>Weitere Funktionen</strong>, um auf die Funktionen der folgenden Gruppen zuzugreifen: <strong>Datenbank</strong>, <strong>Konstruktion</strong>, <strong>Information</strong> und <strong>Statistik</strong>.</li>
+<li><strong>Benannte Bereiche</strong>, um den <strong>Namensmanager</strong> zu öffnen, einen neuen Namen zu definieren oder einen Namen als Funktionsargument einzufügen.</li>
+<li><strong>Berechnung</strong>, um das Programm zu zwingen, Funktionen neu zu berechnen.</li>
+</ul>
+<p>Um eine Formel einzufügen:</p>
+<ol>
+<li>
+<p>Wählen Sie die Zelle, in die Sie eine Funktion einfügen möchten.</p>
+</li>
+<li>
+<p>Gehen Sie auf eine der folgenden Arten vor:</p>
+<ul>
+<li>Wechseln Sie zur Registerkarte <strong>Formel</strong> und verwenden Sie die verfügbaren Schaltflächen in der oberen Symbolleiste, um auf eine Funktion aus einer bestimmten Gruppe zuzugreifen. Klicken Sie dann auf die erforderliche Funktion, um den Assistenten für Funktionsargumente zu öffnen. Sie können auch die Option tusätzlich aus dem Menü verwenden oder auf die Schaltfläche <strong>Formel</strong> in der oberen Symbolleiste klicken, um das Fenster <strong>Funktion einfügen</strong> zu öffnen.</li>
+<li>Wechseln Sie zur Registerkarte <strong>Startseite</strong>, klicken Sie auf das Symbol <strong>Funktion einfügen</strong> und wählen Sie es aus eine der häufig verwendeten Funktionen (SUMME, MITTELWERT, MIN, MAX, ANZAHL) oder klicken Sie auf die Option <strong>Zusätzlich</strong>, um das Fenster <strong>Funktion einfügen</strong> zu öffnen.</li>
+<li>Klicken Sie mit der rechten Maustaste in die ausgewählte Zelle und wählen Sie im Kontextmenü die Option <strong>Funktion einfügen</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Wählen Sie im geöffneten Fenster <strong>Funktion einfügen</strong> die gewünschte Funktionsgruppe aus und wählen Sie dann die gewünschte Funktion aus der Liste und klicken Sie auf <strong>OK</strong>.</p>
+</li>
+<li>
+<p>Geben Sie die Funktionsargumente manuell ein oder wählen Sie den entsprechenden Zellbereich mit Hilfe der Maus aus. Sind für die Funktion mehrere Argumente erforderlich, müssen diese durch Kommas getrennt werden.</p>
+<p>Im Allgemeinen können numerische Werte, logische Werte (WAHR, FALSCH), Textwerte (müssen zitiert werden), Zellreferenzen, Zellbereichsreferenzen, Namensbereiche und andere Funktionen als Funktionsargumente verwendet werden.</p>
+</li>
+<li>
+<p>Geben Sie im geöffneten Fenster <strong>Funktionsargumente</strong> die erforderlichen Werte für jedes Argument ein.</p>
+<p>Sie können die Funktionsargumente entweder manuell eingeben oder auf das Symbol klicken und eine Zelle oder einen Zellbereich auswählen, die bzw. als Argument eingeschlossen werden soll.</p>
+<p>Allgemein können numerische Werte, logische Werte (WAHR, FALSCH), Textwerte (müssen in Anführungszeichen gesetzt werden), Zellbezüge, Zellbereichsbezüge, Namen und andere Funktionen können als Funktionsargumente verwendet werden.</p>
+<p>Das Ergebnis der Funktion wird unten angezeigt.</p>
+</li>
+<li>
+<p>Wenn alle Argumente angegeben sind, klicken Sie im Fenster <strong>Funktionsargumente</strong> auf die Schaltfläche <strong>OK</strong>.</p>
+</li>
+</ol>
+<p>Um eine Funktion manuell über die Tastatur einzugeben:</p>
+<ol>
+<li>
+<p>Wählen Sie eine Zelle aus.</p>
+</li>
+<li>
+<p>Geben Sie das Gleichheitszeichen ein (=).</p>
+<p>Jede Formel muss mit dem Gleichheitszeichen beginnen (=).</p>
+</li>
+<li>
+<p>Geben Sie den Namen der Funktion ein.</p>
+<p>Sobald Sie die Anfangsbuchstaben eingegeben haben, wird die Liste <strong>Formel automatisch vervollständigen</strong> angezeigt. Während der Eingabe werden die Elemente (Formeln und Namen) angezeigt, die den eingegebenen Zeichen entsprechen. Wenn Sie den Mauszeiger über eine Formel bewegen, wird ein Textfeld mit der Formelbeschreibung angezeigt. Sie können die gewünschte Formel aus der Liste auswählen und durch Anklicken oder Drücken der <strong>TAB</strong>-Taste einfügen.</p>
+</li>
+<li>
+<p>Geben Sie die folgenden Funktionsargumente ein.</p>
+<p>Argumente müssen in Klammern gesetzt werden. Die öffnende Klammer „(“ wird automatisch hinzugefügt, wenn Sie eine Funktion aus der Liste auswählen. Wenn Sie Argumente eingeben, wird Ihnen eine QuickInfo mit der Formelsyntax angezeigt.</p>
+<p><img src="./images/functiontooltip.png#uk-margin-auto" alt="Funktions-Tooltip" /></p>
+</li>
+<li>
+<p>Wenn Sie alle Argumente angegeben haben, schließende Sie die „)“ Klammer und drücken Sie die <strong>Eingabetaste</strong>.</p>
+</li>
+</ol>
+<p>Wenn Sie neue Daten eingeben oder die als Argumente verwendeten Werte ändern, wird die Neuberechnung von Funktionen standardmäßig automatisch durchgeführt. Sie können das Programm zwingen, Funktionen neu zu berechnen, indem Sie die Schaltfläche <strong>Berechnung</strong> auf der Registerkarte <strong>Formel</strong> verwenden. Klicken Sie auf die Schaltfläche <strong>Berechnung</strong>, um die gesamte Arbeitsmappe neu zu berechnen, oder klicken Sie auf den Pfeil unter der Schaltfläche und wählen Sie die erforderliche Option aus dem Menü: <strong>Arbeitsmappe berechnen</strong> oder <strong>Das aktuelle Blatt berechnen</strong>.</p>
+<p>Sie können auch die folgenden Tastenkombinationen verwenden: <strong>F9</strong>, um die Arbeitsmappe neu zu berechnen, <strong>Umschalt+F9</strong>, um das aktuelle Arbeitsblatt neu zu berechnen.</p>
+<p>Hier finden Sie die Liste der verfügbaren Funktionen, gruppiert nach Kategorien:</p>
+<table class="uk-table uk-table-striped">
+	<tbody>
+		<tr>
+			<td class="uk-text-center">Funktionskategorie</td>
+			<td class="uk-text-center">Beschreibung</td>
+			<td class="uk-text-center">Funktionen</td>
+		</tr>
+		<tr>
+			<td>Text- und Datenfunktionen</td>
+			<td>Diese dienen dazu die Textdaten in Ihrer Tabelle korrekt anzuzeigen.</td>
+					<td>ASC; ZEICHEN; SÄUBERN; CODE; VERKETTEN; TEXTKETTE; DM; IDENTISCH; FINDEN; FINDENB; FEST; LINKS; LINKSB; LÄNGE; LÄNGEB; KLEIN; TEIL; TEILB; ZAHLENWERT; GROSS2; ERSETZEN; ERSETZENB; WIEDERHOLEN; RECHTS; RECHTSB; SUCHEN; SUCHENB; WECHSELN; T; TEXT; TEXTVERKETTEN; GLÄTTEN; UNIZEICHEN; UNICODE; GROSS; WERT</td>
+				</tr>
+				<tr>
+					<td>Statistische Funktionen</td>
+					<td>Diese dienen der Analyse von Daten: Mittelwert ermitteln, den größen bzw. kleinsten Wert in einem Zellenbereich finden.</td>
+					<td>MITTELABW; MITTELWERT; MITTELWERTA; MITTELWERTWENN; MITTELWERTWENNS; BETAVERT; BETA.VERT; BETA.INV; BETAINV; BINOMVERT; BINOM.VERT; BINOM.VERT.BEREICH; BINOM.INV; CHIVERT; CHIINV; CHIQU.VERT; CHIQU.VERT.RE; CHIQU.INV; CHIQU.INV.RE; CHITEST; CHIQU.TEST; KONFIDENZ; KONFIDENZ.NORM; KONFIDENZ.T; KORREL; ANZAHL; ANZAHL2; ANZAHLLEEREZELLEN; ZÄHLENWENN; ZÄHLENWENNS; KOVAR; KOVARIANZ.P; KOVARIANZ.S; KRITBINOM; SUMQUADABW; EINDEUTIG; EXPON.VERT; EXPONVERT; F.VERT; FVERT; F.VERT.RE; F.INV; FINV; F.INV.RE; FISHER; FISHERINV; SCHÄTZER; PROGNOSE.ETS; PROGNOSE.ETS.KONFINT; PROGNOSE.ETS.SAISONALITÄT; PROGNOSE.ETS.STAT; PROGNOSE.LINEAR; HÄUFIGKEIT; FTEST; F.TEST; GAMMA; GAMMA.VERT; GAMMAVERT; GAMMA.INV; GAMMAINV; GAMMALN; GAMMALN.GENAU; GAUSS; GEOMITTEL; HARMITTEL; HYPGEOMVERT; HYPGEOM.VERT; ACHSENABSCHNITT; KURT; KGRÖSSTE; LOGINV; LOGNORM.VERT; LOGNORM.INV; LOGNORMVERT; MAX; MAXA; MAXWENNS; MEDIAN; MIN; MINA; MINWENNS; MODALWERT; MODUS.VIELF; MODUS.EINF; NEGBINOMVERT; NEGBINOM.VERT; NORMVERT; NORM.VERT; NORMINV; NORM.INV; STANDNORMVERT; NORM.S.VERT; STANDNORMINV; NORM.S.INV; PEARSON; QUANTIL; QUANTIL.EXKL; QUANTIL.INKL; QUANTILSRANG; QUANTILSRANG.EXKL; QUANTILSRANG.INKL; RKP; VARIATIONEN; VARIATIONEN2; PHI; POISSON; POISSON.VERT; WAHRSCHBEREICH; QUARTILE; QUARTILE.EXKL; QUARTILE.INKL; RANG; RANG.MITTELW; RANG.GLEICH; BESTIMMTHEITSMASS; SCHIEFE; SCHIEFE.P; STEIGUNG; KKLEINSTE; STANDARDISIERUNG; STABW; STABW.S; STABWA; STABWN; STABW.N; STABWNA; STFEHLERYX; TVERT; T.VERT; T.VERT.2S; T.VERT.RE; T.INV; T.INV.2S; TINV; TREND; GESTUTZTMITTEL; TTEST; T.TEST; VARIANZ; VARIANZA; VARIANZEN; VARIATION; VAR.P; VAR.S; VARIANZENA; WEIBULL; WEIBULL.VERT; GTEST; G.TEST</td>
+				</tr>
+				<tr>
+					<td>Mathematische und trigonometrische Funktionen</td>
+					<td>Werden genutzt, um grundlegende mathematische und trigonometrische Operationen durchzuführen: Addition, Multiplikation, Division, Runden usw.</td>
+					<td>ABS; ACOS; ARCCOSHYP; ARCCOT; ARCCOTHYP; AGGREGAT; ARABISCH; ARCSIN; ARCSINHYP; ARCTAN; ARCTAN2; ARCTANHYP; BASE; OBERGRENZE; OBERGRENZE.MATHEMATIK; OBERGRENZE.GENAU; KOMBINATIONEN; KOMBINATIONEN2; COS; COSHYP; COT; COTHYP; COSEC; COSECHYP; DEZIMAL; GRAD; ECMA.OBERGRENZE; GERADE; EXP; FAKULTÄT; ZWEIFAKULTÄT; UNTERGRENZE; UNTERGRENZE.GENAU; UNTERGRENZE.MATHEMATIK; GGT; GANZZAHL; ISO.OBERGRENZE; KGV; LN; LOG; LOG10; MDET; MINV; MMULT; MEINHEIT; REST; VRUNDEN; POLYNOMIAL; UNGERADE; PI; POTENZ; PRODUKT; QUOTIENT; BOGENMASS; ZUFALLSZAHL; ZUFALLSBEREICH; RÖMISCH; RUNDEN; ABRUNDEN; AUFRUNDEN; SEC; SECHYP; POTENZREIHE; VORZEICHEN; SIN; SINHYP; WURZEL; WURZELPI; TEILERGEBNIS; SUMME; SUMMEWENN; SUMMEWENNS; SUMMENPRODUKT; QUADRATESUMME; SUMMEX2MY2; SUMMEX2PY2; SUMMEXMY2; TAN; TANHYP; KÜRZEN; ZUFALLSMATRIX</td>
+				</tr>
+				<tr>
+					<td>Datums- und Uhrzeitfunktionen</td>
+					<td>Werden genutzt um Datum und Uhrzeit in einer Tabelle korrekt anzuzeigen.</td>
+					<td>DATUM; DATEDIF; DATWERT; TAG; TAGE; TAGE360; EDATUM; MONATSENDE; STUNDE; ISOKALENDERWOCHE; MINUTE; MONAT; NETTOARBEITSTAGE; NETTOARBEITSTAGE.INTL; JETZT; SEKUNDE; ZEIT; ZEITWERT; HEUTE; WOCHENTAG; KALENDERWOCHE; ARBEITSTAG; ARBEITSTAG.INTL; JAHR; BRTEILJAHRE</td>
+				</tr>
+				<tr>
+					<td>Technische Funktionen</td>
+					<td>Diese dienen der Durchführung von technischen Berechnungen:</td>
+					<td>BESSELI; BESSELJ; BESSELK; BESSELY; BININDEZ; BININHEX; BININOKT; BITUND; BITLVERSCHIEB; BITODER; BITRVERSCHIEB; BITXODER; KOMPLEXE; UMWANDELN; DEZINBIN; DEZINHEX; DEZINOKT; DELTA; GAUSSFEHLER; GAUSSF.GENAU; GAUSSFKOMPL; GAUSSFKOMPL.GENAU; GGANZZAHL; HEXINBIN; HEXINDEZ; HEXINOKT; IMABS; IMAGINÄRTEIL; IMARGUMENT; IMKONJUGIERTE; IMCOS; IMCOSHYP; IMCOT; IMCOSEC; IMCOSECHYP; IMDIV; IMEXP; IMLN; IMLOG10; IMLOG2; IMAPOTENZ; IMPRODUKT; IMREALTEIL; IMSEC; IMSECHYP; IMSIN; IMSINHYP; IMWURZEL; IMSUB; IMSUMME; IMTAN; OKTINBIN; OKTINDEZ; OKTINHEX</td>
+				</tr>
+				<tr>
+					<td>Datenbankfunktionen</td>
+					<td>Diese dienen dazu Berechnungen für die Werte in einem bestimmten Feld der Datenbank durchzuführen, die den angegebenen Kriterien entsprechen.</td>
+					<td>DBMITTELWERT; DBANZAHL; DBANZAHL2; DBAUSZUG; DBMAX; DBMIN; DBPRODUKT; DBSTDABW; DBSTDABWN; DBSUMME; DBVARIANZ; DBVARIANZEN</td>
+				</tr>
+				<tr>
+					<td>Finanzmathematische Funktionen</td>
+					<td>Diese dienen dazu finanzielle Berechnungen durchzuführen (Kapitalwert, Zahlungen usw.).</td>
+					<td>AUFGELZINS; AUFGELZINSF; AMORDEGRK; AMORLINEARK; ZINSTERMTAGVA; ZINSTERMTAGE; ZINSTERMTAGNZ; ZINSTERMNZ; ZINSTERMZAHL; ZINSTERMVZ; KUMZINSZ; KUMKAPITAL; GDA2; GDA; DISAGIO; NOTIERUNGDEZ; NOTIERUNGBRU; DURATIONТ; EFFEKTIV; ZW; ZW2; ZINSSATZ; ZINSZ; IKV; ISPMT; MDURATION; QIKV; NOMINAL; ZZR; NBW; UNREGER.KURS; UNREGER.REND; UNREGLE.KURS; UNREGLE.REND; PDURATION; RMZ; KAPZ; KURS; KURSDISAGIO; KURSFÄLLIG; BW; ZINS; AUSZAHLUNG; ZSATZINVEST; LIA; DIA; TBILLÄQUIV; TBILLKURS; TBILLRENDITE; VDB; XINTZINSFUSS; XKAPITALWERT; RENDITE; RENDITEDIS; RENDITEFÄLL</td>
+				</tr>
+				<tr>
+					<td>Nachschlage- und Verweisfunktionen</td>
+					<td>Diese dienen dazu Informationen aus der Datenliste zu finden.</td>
+					<td>ADRESSE; WAHL; SPALTE; SPALTEN; FORMELTEXT; WVERWEIS; HYPERLINLK; INDEX; INDIREKT; VERWEIS; VERGLEICH; BEREICH.VERSCHIEBEN; ZEILE; ZEILEN; MTRANS; SVERWEIS</td>
+				</tr>
+				<tr>
+					<td>Informationsfunktionen</td>
+					<td>Diese dienen dazu Ihnen Informationen über die Daten in der ausgewählten Zelle oder einem Bereich von Zellen zu geben.</td>
+					<td>FEHLER.TYP; ISTLEER; ISTFEHL; ISTFEHLER; ISTGERADE; ISTFORMEL; ISTLOG; ISTNV; ISTKTEXT; ISTZAHL; ISTUNGERADE; ISTBEZUG; ISTTEXT; N; NV; BLATT; BLÄTTER; TYP</td>
+				</tr>
+		<tr>
+			<td>Logische Funktionen</td>
+			<td>Diese dienen dazu zu prüfen, ob eine Bedingung wahr oder falsch ist.</td>
+			<td>UND; FALSCH; WENN; WENNFEHLER; WENNNV; WENNS; NICHT; ODER; ERSTERWERT; WAHR; XODER</td>
+		</tr>
+	</tbody>
+</table>  
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_1.63.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter_1.65.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_1.63.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter_1.65.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
